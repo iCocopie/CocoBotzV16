@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://telegra.ph/2fec41fdeadc838ae7661.jpg" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://telegra.ph/file/2fec41fdeadc838ae7661.jpg" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
 ## RUN TERMUX
