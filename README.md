@@ -9,11 +9,8 @@ apt update && apt upgrade
 apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
-termux-setup-storage
-cd /sdcard
-cp -r Lolichu-Bot
-cd
-cd Lolichu-Bot
+git clone https://github.com/iCocopie/CocoBotzV16
+cd CocoBotzV16
 npm install
 npm start
 ```
@@ -32,5 +29,5 @@ $ node .
 
 
 ## Donasi
-* [`Saweria`](https://saweria.co/nanang13) 
+* [`Saweria`](https://saweria.co/Cocopie) 
 
