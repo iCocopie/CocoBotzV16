@@ -1,5 +1,5 @@
 /**
-   * Recode By XaviorOfc
+   * Recode By Cocopie
    * Contact Me on wa.me/6281908052908
    * Follow https://github.com/Xavior88
    * Jangan Diubah Author Nya
@@ -72,7 +72,7 @@ async function startxavior() {
     const xavior = xaviorConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['CocoBot','Safari','1.0.0'],
+        browser: ['CocoBotz','Safari','1.0.0'],
         auth: state
     })
 
@@ -83,7 +83,7 @@ async function startxavior() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await xavior.sendContact(callerId, global.owner)
-    xavior.sendMessage(callerId, { text: `Sistem otomatis block!\nJangan menelpon bot!\nSilahkan Hubungi Owner Untuk Dibuka !`}, { quoted : pa7rick })
+    xavior.sendMessage(callerId, { text: `*Auto Block System*\nJangan Menelpon Bot!\nSilahkan Hubungi Owner Untuk Dibuka !`}, { quoted : pa7rick })
     await sleep(8000)
     await xavior.updateBlockStatus(callerId, "block")
     }
@@ -155,7 +155,7 @@ async function startxavior() {
                 }
 
                 if (anu.action == 'add') {
-                    xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Hamlo Kids @${num.split("@")[0]}\nSelamat Datang Di Grup ${metadata.subject}` })
+                    xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Hamlo Kids @${num.split("@")[0]}\nSelamat Datang Di Grup ${metadata.subject} ☝️😅` })
                 } else if (anu.action == 'remove') {
                     xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split("@")[0]} Keluar Dari Grup ${metadata.subject}` })
                 } else if (anu.action == 'promote') {
@@ -248,7 +248,7 @@ async function startxavior() {
             else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startxavior(); }
             else xavior.end(`Unknown DisconnectReason: ${reason}|${connection}`)
         }
-        console.log('Connected...', update)
+        console.log('Connected To CocoBotz...', update)
     })
 
     xavior.ev.on('creds.update', saveState)
